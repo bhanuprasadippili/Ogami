@@ -1,0 +1,813 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: rgb(226, 222, 222);
+}
+
+header div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+}
+
+header div p {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+header article {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+}
+
+header article section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1.5rem; 
+}
+
+header article section ion-icon {
+    border-radius: 50%;
+    border: none;
+}
+
+header article section ion-icon:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+header select, button {
+    border: none;
+    background-color: rgb(226, 222, 222);
+}
+
+header button {
+    display: flex;
+    gap: .5rem;
+}
+
+
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav img {
+   width: 8rem;
+}
+
+nav div {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1.5rem;
+}
+
+nav div select {
+    width: 5rem;
+    border: none;
+}
+
+nav section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+}
+
+nav section sup {
+    color: white;
+    padding: .1rem;
+    background-color: green;
+    border-radius: 40%;
+}
+
+#navv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+}
+
+#navv>select {
+    color: white;
+    background-color: green;
+    border: none;
+    width: 13rem;
+    padding: .8rem .2rem;
+}
+
+#navv p select {
+    padding: 0 .5rem;
+    border: none;
+    font-weight: bold;
+}
+
+#navv p {
+    display: flex;
+    border: 1px solid rgb(136, 133, 133);
+    justify-content: center;
+}
+
+#navv p input {
+    width: 20rem;
+    padding-left: .5rem;
+    border: none;
+}
+
+#navv p button {
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    width: 10rem;
+    padding: .8rem 0;
+}
+
+#parent {
+    width: 100%;
+    height: 100vh;
+}
+
+#parent1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://demoapus2.com/ogami/wp-content/uploads/2019/02/slider12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#parent1 ion-icon {
+    font-size: 1.5rem;
+}
+
+#parent1 img {
+    width: 85%;
+}
+
+#parent1 section {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+}
+
+#parent1 button {
+    color: green;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 1px solid green;
+    width: 7rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+#parent1 button:hover {
+    color: white;
+    background-color: green;
+}
+
+#parent1 h3 {
+    font-size: 1.5rem;
+    color: green;
+}
+
+#parent1 h1 {
+    font-size: 4rem;
+}
+
+#parent1 p {
+    font-size: 1rem;
+}
+
+#parent11 {
+    display: block;
+}
+
+
+#parent22 {
+    display: none;
+}
+
+#parent2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://demoapus2.com/ogami/wp-content/uploads/2019/02/slider11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#parent2 ion-icon {
+    font-size: 1.5rem;
+}
+
+#parent2 img {
+    width: 85%;
+}
+
+#parent2 section {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+}
+
+#parent2 button {
+    color: white;
+    background-color: green;
+    border-radius: 1rem;
+    border: 1px solid green;
+    width: 7rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+#parent2 button:hover {
+    color: white;
+    background-color: black;
+}
+
+#parent2 h3 {
+    font-size: 1.2rem;
+    color: green;
+}
+
+#parent2 h1 {
+    font-size: 4rem;
+}
+
+#parent2 h2 {
+    font-size: 1.5rem;
+}
+
+#shipment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#shipment article {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: -4rem;
+}
+
+#shipment section {
+    display: grid;
+    gap: 1rem;
+}
+
+#fresh {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#fresh section {
+    width: 17%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border: 1px solid rgba(0, 0, 0, 0.111);
+    padding: 1rem;
+}
+
+#fresh section:hover {
+    border: 2px solid green;
+}
+
+#fresh section:hover img {
+    animation: anim 1s infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(.5rem);
+    }
+    50% {
+        transform: translateY(-.5rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+#fresh section p {
+    color: green;
+}
+
+
+#product {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#product h1 {
+    font-size: 2.8rem;
+    font-family: sans-serif;
+}
+
+#product ul {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+#product ul li:hover {
+    color: green;
+}
+
+#product article {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#product article section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+#product article section img {
+    width: 90%;
+}
+
+#product article section h4 {
+    color: green;
+}
+
+#product article section h3 {
+    font-size: 1rem;
+}
+
+#product article section h2 {
+    font-size: 1rem;
+}
+
+#product article section p {
+    display: flex;
+    gap: .5rem;
+}
+
+#product article section ion-icon {
+    font-size: 1.2rem;
+    padding: .5rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#product article section ion-icon:hover {
+    color: white;
+     background-color: green;
+}
+
+#product article section:hover h3 {
+    display: none;
+}
+
+#product article section p {
+    display: none;
+}
+
+#product article section:hover p {
+    display: block;
+}
+
+#product article section:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#product article section:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 1s;
+}
+
+#shop {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 3rem 0;
+}
+
+#shop section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#shop section:first-child {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://demoapus2.com/ogami/wp-content/uploads/2019/01/banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shop section:nth-child(2) {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://demoapus2.com/ogami/wp-content/uploads/2019/01/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shop section:last-child {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://demoapus2.com/ogami/wp-content/uploads/2019/01/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shop section button {
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    padding: .7rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    display: none;
+}
+
+#shop section:hover button {
+    display: block;
+    animation: x .5s;
+}
+
+@keyframes x {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 2rem;
+    }
+    
+}
+
+#shop section:hover img {
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(.5rem);
+    }
+    50% {
+        transform: translateY(-.5rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+#deals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#deals h1 {
+    font-size: 2.6rem;
+    font-family: sans-serif;
+}
+
+#deals hr {
+    width: 7%;
+    border: .1px solid green;
+}
+
+#deals aside {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem
+}
+
+#deals aside article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#deals aside section {
+    width: 70%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+#deals aside article:first-child section:first-child  span{
+    text-align: end;
+}
+
+#deals aside article:first-child section:last-child span{
+    text-align: end;
+}
+
+#deals aside > img {
+    width: 30%;
+}
+
+#deals aside article section:hover img{
+    animation: still 1s infinite;
+}
+
+
+@keyframes still {
+    0% {
+        transform: translateY(.3rem);
+    }
+    50% {
+        transform: translateY(-.3rem);
+    }
+    100% {
+        transform: translateY(.3rem);
+    }
+}
+
+
+#sponsor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+#sponsor section {
+    width: 70%;
+    background-color: rgb(252, 247, 247);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.8rem;
+    border-radius: 1rem;
+}
+
+#sponsor section:hover img {
+    transform: scale(.8);
+    transition: 1s;
+}
+
+#sponsor section img {
+    transition: .9s;
+}
+
+#sponsor section img:hover {
+    transform: scale(1);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+footer section {
+    line-height: 1.5rem;
+}
+
+footer section p ion-icon{
+    font-size: 1.7rem;
+    border-radius: 50%;
+}
+
+footer section p ion-icon:hover{
+    color: green;
+}
+
+footer section ul {
+    list-style: none;
+}
+
+footer section ul li:hover {
+    color: green;
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(16, 166, 16);
+    padding: 2rem 0;
+}
+
+#footer section {
+    color: white;
+    line-height: 1.7rem;
+    font-family: sans-serif;
+}
+
+#footer span {
+    display: flex;
+    box-shadow: rgba(93, 91, 91, 0.19) 0px 10px 20px, rgba(93, 91, 91, 0.23) 0px 6px 6px;
+    border-radius: 1rem;
+}
+
+#footer span input {
+    color: white;
+    background-color: rgb(16, 166, 16);
+    width: 15rem;
+    padding: .6rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    outline: none;
+    border: .5px solid white;
+}
+
+#footer span input::placeholder {
+    color: white;
+}
+
+#footer span button {
+    width: 10rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#footer span button:hover {
+    color: white;
+    background-color: rgb(16, 166, 16);
+    border: .5px solid white;
+}
+
+#rights {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+#pick {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#divv{
+    margin: 3rem 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    row-gap: 2rem;    
+}
+#divv .card{
+    border: 2px solid rgb(180, 177, 177);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    border-radius: .5rem;
+}
+
+#divv .card:hover {
+    transform: translateY(-.5rem);
+    transition: 1s;
+}
+
+#divv .card img{
+    height: 60%;
+    width: 70%;
+    display: flex;
+    margin:0 auto;
+    
+}
+#divv .card div{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+
+#divv .icon {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+}
+
+#divv .card:hover .icon {
+    opacity: 1;
+}
+
+#divv .icon ion-icon {
+    padding: .2rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#divv .icon ion-icon:hover {
+    padding: .2rem;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+#divv .btnn button:first-child {
+    color: black;
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(236, 236, 239);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+#divv .btnn button:last-child {
+    color: black;
+    font-weight: bold;
+    width: 2.5rem;
+    height: 2rem;
+    background-color: rgb(204, 209, 208);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+#divv .btnn:hover button:first-child{
+    color: white;
+background-color: rgb(12, 193, 181);
+}
+
+#divv .btnn:hover button:last-child{
+    color: white;
+    background-color: rgb(9, 152, 143);
+}
+
+#divv .btnn {
+    border-radius: .5rem;
+}
